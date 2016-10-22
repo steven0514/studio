@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>STUDIO</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+   <header class="container-fluid">
+       <div class="row">
+           <nav class="navbar navbar-default" role="navigation">
+               <!-- logo區 -->
+               <a class="navbar-brand" href="#"><img src="img/Logo_s.png" alt="" class="img-rwd"></a>
+           </nav>
+       </div>
+       <div class="row">
+           <div class="mainbg">
+               <div class="mainlogo">
+                   <img src="img/Logo_l.png" class="img-rwd">
+                   <p class="text-center mt20 descript">WEB DESIGN</p>
+               </div>
+           </div>
+       </div>
+   </header>
+   <article>
+       <section class="bgwhite main primary">
+           <div class="container">
+               <div class="col-xs-12 col-sm-6 text-center">
+                   <h2 class="fyello">ABOUT US</h2>
+                   <p class="fgrey"> Ｈi , 我們的服務項目為
+                       <br><span class="bold">RWD一頁式網站製作</span>
+                       <br> 運有友善的裝置環境不僅
+                       <br>方便瀏覽及易於提高瀏覽
+                       <br>及SEO排名!
+                       <br><img src="img/Icon-click.png">
+                       </p>
+               </div>
+               <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4 text-center">
+                   <img src="img/computer.png" class="img-rwd">
+               </div>
+           </div>
+       </section>
+       <section class="bgblue main secondary">
+           <div class="container">
+               <h2 class='text-center'>SERVICE</h2>
+              <div class="wrap">
+                    <div class="col3" data-img="img/Icon-hotel.png">
+                        <div class="serDes">
+                            <p>HOTEL</p>
+                            <p>-民宿網站-</p>
+                        </div>
+                    </div>
+                    <div class="col3" data-img="img/Icon-food.png">
+                        <div class="serDes">
+                            <p>FOOD</p>
+                            <p>-餐飲網站-</p>
+                        </div>
+                    </div>
+                    <div class="col3" data-img="img/Icon-company.png">
+                        <div class="serDes">
+                            <p>COMPANY</p>
+                            <p>-公司形象-</p>
+                        </div>
+                    </div>
+                    <div class="col3" data-img="img/Icon-sales.png">
+                        <div class="serDes">
+                            <p>SALES</p>
+                            <p>-銷售頁面-</p>
+                        </div>
+                    </div>
+              </div>
+           </div>
+       </section>
+       <!--third-->
+       <section class="container-fluid third main">
+           <h2 class="text-center fwhite">RWD響應式網站
+               <p class="text-center fwhite">客戶族群不再受限 平板/手機也能同步跟進 網路行銷好方便</p>
+               <button>立即體驗</button>
+           </h2>
+           <div class="thirdbg"></div>
+       </section>
+       <!--forth-->
+       <section class="forth">
+          <div class="container">
+              <h2>collection</h2>
+              <div>
+                  <div class="col-xs-4 col-sm-4">
+                     <a href="http://www.sfclinic.com.tw/" target="_blank"> <img src="img/Levent.png" alt="" class="img-rwd"></a>
+                  </div>
+                  <div class="col-xs-4 col-sm-4">
+                      <a href="http://www.macannashoe.com/" target="_blank"><img src="img/Macanna.png" alt="" class="img-rwd"></a>
+                  </div>
+                  <div class="col-xs-4 col-sm-4">
+                      <a href="http://www.sfclinic.com.tw/" target="_blank"><img src="img/Levent.png" alt="" class="img-rwd"></a>
+                  </div>
+              </div>
+          </div>
+       </section>
+       <section class="fifth">
+          <div class="container">
+          <div class="col-xs-7 col-sm-5 col-md-3"><img src="img/wow_sale.png" alt="" class="img-rwd"></div>
+             <div class="col-xs-12 col-sm-7 col-md-9">
+                <h2 class="fwhite bold">RWD響應式網頁促銷方案價格</h2>
+                <p class="fwhite dollar">$49,990</p>
+                <p class="fwhite ">. 擁有一個完整的桌機/平板/手機頁面</p>
+                <p class="fwhite ">. 更換圖片/文字內容/可以從後台自行更新</p>
+                <p class="fwhite ">. SEO排名及優化網頁  維護更容易</p>
+             </div>
+          </div>
+       </section>
+   </article>
+    <footer>
+        <div class="container">
+            <p class="copyright">
+                <img src="img/Logo_f.png">            
+                <span>WEB STUDIO</span> copyright on 2016
+            </p>
+        </div>  
+    </footer>        
+    <script src="jsmin/jquery-1.12.3.min.js"></script>
+    <script src="jsmin/bootstrap.min.js"></script>
+    <script src="jsmin/select2.min.js"></script>
+    <script>
+    $(function(){
+       $('.col3').each(function(){
+           $(this).append('<div class="circlepic"></div>') 
+           $(this).children('.circlepic').css({'background-image':'url('+ $(this).attr('data-img') +')'});
+       }) 
+    })
+    </script>
+</body>
+
+</html>
